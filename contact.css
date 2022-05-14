@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+body {
+background: url('blueback.jpg') no-repeat;
+background-size: cover;
+height: 100vh; 
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+.contact-form {
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgb(0,0,0,0);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0)
+}
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.input-fields,
+.msg {
+    width: 40%;
+}
+
+.input-fields .input,
+.msg textarea {
+    margin: 10px 0;
+   
+    border: 0;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+.msg textarea {
+    height: 212px;
+}
+::-moz-input-placeholder {
+color:antiquewhite;
+}
+.btn {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+
+
+}
+@media screen and (max-width:600px) {
+    .contact-form {
+        flex-direction: column;
+    }
+}
+
+a {
+    text-decoration: none;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin: 0 5px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+}
+
+.list-inline {
+    font-size: 30px;
+}
+
+header#page_header nav ul li {
+    list-style: none;
+}
+a:hover {
+    background-color: turquoise;
+    
+}
